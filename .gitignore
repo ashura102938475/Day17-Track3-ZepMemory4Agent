@@ -3,6 +3,8 @@
 __pycache__/
 .pytest_cache/
 *.pyc
+.ai-log/
+reports/submission/
 data/golden_eval.json
 data/golden*.json
 data/golden_eval.example.json
