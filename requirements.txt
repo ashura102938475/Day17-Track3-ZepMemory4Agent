@@ -5,6 +5,9 @@ langgraph>=1.2.5,<2
 # Gemini LLM for the demo UI chat reply (gemini-2.5-flash-lite by default).
 google-genai>=1.0,<2
 
+# OpenAI SDK for the NVIDIA NIM (OpenAI-compatible) provider chat reply.
+openai>=1.0,<3
+
 # Local baseline stores
 redis>=6,<7
 qdrant-client>=1.15,<2

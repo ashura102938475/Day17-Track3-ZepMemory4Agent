@@ -24,5 +24,10 @@ class Settings:
     gemini_api_key: str = os.getenv("GEMINI_API_KEY", "") or os.getenv("GOOGLE_API_KEY", "")
     gemini_model: str = os.getenv("GEMINI_MODEL", "gemini-2.5-flash-lite")
 
+    # NVIDIA NIM (OpenAI-compatible) provider, preferred over Gemini when set.
+    nvidia_api_key: str = os.getenv("NVIDIA_API_KEY", "")
+    nvidia_base_url: str = os.getenv("NVIDIA_BASE_URL", "https://integrate.api.nvidia.com/v1")
+    nvidia_model: str = os.getenv("NVIDIA_MODEL", "nvidia/nemotron-3.5-lightning-30b-a3b")
+
 
 settings = Settings()
